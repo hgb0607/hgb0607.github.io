@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>云书世界</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="个人blog,"> 
+    <meta name="description" content=" 1.新建一个文本文档patch.tjs 2.复制下面代码到文件中 3.将patch.tsj放到steam游戏《三色绘恋》根目录下 4.用吉里吉里2模拟器打开即可   
+或者直接下载项目文件：htt,"> 
+    <meta name="author" content="hgb0607"> 
+    
+    <link rel="icon" href="../img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="../css/diaspora.css">
+    <link rel="stylesheet" href="../css/video.css">
+</head>
+
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">在手机上运行《三色绘恋》</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">在手机上运行《三色绘恋》</h1>
+        <div class="stuff">
+            <span>十月 03, 2018</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="../tags/GalGame/">GalGame</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="../tags/补丁/">补丁</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p> 1.新建一个文本文档patch.tjs<br> 2.复制下面代码到文件中<br> 3.将patch.tsj放到steam游戏《三色绘恋》根目录下<br> 4.用吉里吉里2模拟器打开即可   </p>
+<p>或者直接下载项目文件：<a href="https://github.com/hgb0607/Gal_tricolour" target="_blank" rel="noopener">https://github.com/hgb0607/Gal_tricolour</a></p>
+<p><strong>PS:本blog不提供游戏资源，请支持正版，前往steam购买</strong></p>
+<h4 id="代码内容"><a href="#代码内容" class="headerlink" title="代码内容"></a>代码内容</h4><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class HttpRequest</span><br><span class="line">&#123;</span><br><span class="line">function HttpRequest() &#123;&#125;</span><br><span class="line">function open() &#123;&#125;</span><br><span class="line">function setRequestHeader() &#123;&#125;</span><br><span class="line">function send() &#123;&#125;</span><br><span class="line">function sendStorage() &#123;&#125;</span><br><span class="line">function abort() &#123;&#125;</span><br><span class="line">function getAllResponseHeaders() &#123;return %[];&#125;</span><br><span class="line">function getResponseHeader() &#123;return &quot;&quot;;&#125;</span><br><span class="line">function getResponseText() &#123;return &quot;&quot;;&#125;</span><br><span class="line">var readyState = 0;</span><br><span class="line">var response = &quot;&quot;;</span><br><span class="line">var responseData = &lt;% 00 %&gt;;</span><br><span class="line">var status = 404;</span><br><span class="line">var statusText = &quot;Not Found&quot;;</span><br><span class="line">var contentType = &quot;text/html&quot;;</span><br><span class="line">var contentTypeEncoding = &quot;utf-8&quot;;</span><br><span class="line">var contentLength = 0;</span><br><span class="line">function onReadyStateChange() &#123;&#125;</span><br><span class="line">function onProgress() &#123;&#125;</span><br><span class="line">function finalize() &#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line">with(HttpRequest)</span><br><span class="line">&#123;</span><br><span class="line">.UNINITIALIZED = 0;</span><br><span class="line">.OPEN = 1; </span><br><span class="line">.SENT = 2; </span><br><span class="line">.RECEIVING = 3; </span><br><span class="line">.LOADED = 4; </span><br><span class="line">&#125;</span><br><span class="line">Plugins.link(&quot;kirikiroid2.dll&quot;);</span><br><span class="line">Storages.setTextEncoding(&quot;gbk&quot;);</span><br></pre></td></tr></table></figure>
+<hr>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
+                <source type="audio/mpeg" src="/music/雲翼星辰 - 三色·绘恋.mp3">
+            </audio>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/diaspora.js"></script>
+<link rel="stylesheet" href="../photoswipe/photoswipe.css">
+<link rel="stylesheet" href="../photoswipe/default-skin/default-skin.css">
+<script src="../photoswipe/photoswipe.min.js"></script>
+<script src="../photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
